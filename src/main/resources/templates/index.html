@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <title>Index</title>
+</head>
+<body>
+<h3>Мимимиметр</h3>
+<h4>Кто из них мимимишнее? Кликни по фотографии!</h4>
+<div>
+    <button th:text="45 - ${count}"></button>
+</div>
+
+<div th:class="member" th:each="cat: ${cats}">
+    <form th:method="POST" th:action="@{/vote/{id}(id=${cat.getId()})}">
+        <input th:class="img" th:type="image" th:src="${cat.getImage()}">
+    </form>
+    <form th:method="POST" th:action="@{/vote/{id}(id=${cat.getId()})}">
+        <input th:type="submit" th:value="${cat.getName()}">
+    </form>
+</div>
+
+<br/>
+<hr/>
+<a href="/top">Посмотреть топ</a>
+
+</body>
+<script>
+</script>
+</html>

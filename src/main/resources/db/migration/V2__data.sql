@@ -1,0 +1,10 @@
+insert into cats (name, image) VALUES ('Амели', 'image/Амели.jpg');
+insert into cats (name, image) VALUES ('Барсик', 'image/Барсик.jpg');
+insert into cats (name, image) VALUES ('Бильбо', 'image/Бильбо.jpg');
+insert into cats (name, image) VALUES ('Лизинг', 'image/Лизинг.jpg');
+insert into cats (name, image) VALUES ('Мурзик', 'image/Мурзик.jpg');
+insert into cats (name, image) VALUES ('Пушок', 'image/Пушок.jpg');
+insert into cats (name, image) VALUES ('Соня', 'image/Соня.jpg');
+insert into cats (name, image) VALUES ('Тихоня', 'image/Тихоня.jpg');
+insert into cats (name, image) VALUES ('Том', 'image/Том.jpg');
+insert into cats (name, image) VALUES ('Шерхан', 'image/Шерхан.jpg');
